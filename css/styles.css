@@ -74,8 +74,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
-  align-items: center;
+  display: block;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -145,11 +144,7 @@ body {
 .header-list {
   display: flex;
   align-items: center;
-}
-
-.address-list {
-  display: flex;
-  align-items: center;
+  gap: 40px;
 }
 
 .header-logo {
@@ -172,16 +167,20 @@ body {
   color: var(--main-color);
 }
 
-.header-item:not(:last-child) {
-  margin-right: 40px;
+.header-item {
 }
 
 .address {
   margin-left: auto;
 }
 
+.address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .address-mail {
-  margin-right: 40px;
 }
 
 .contact-link {
@@ -229,45 +228,35 @@ body {
   margin-right: 24px;
 }
 
-/* ----------CONTENT--------- */
-.content {
+/* ----------WORK--------- */
+.work {
   padding-top: 0;
   flex-wrap: wrap;
 }
-.content-title {
-}
 
-.content-list {
-}
-
-.content-item:not(:nth-child(3n)) {
+.work-item:not(:nth-child(3n)) {
   margin-right: 24px;
 }
 
-/* ---------FEATURES--------- */
-.features {
+/* ---------TEAM--------- */
+.team {
   background-color: #f4f4fd;
-  flex-wrap: wrap;
 }
 
-.features-item:not(:nth-child(4n)) {
+.team-item:not(:nth-child(4n)) {
   margin-right: 24px;
 }
 
-.features-img {
-}
-
-.features-subtitle {
-  padding-top: 32px;
+.team-subtitle {
   margin-bottom: 8px;
 }
 
-.features-content {
+.team-content {
   background: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  padding: 32px 60px;
+  padding: 32px 0px;
   text-align: center;
 }
 
@@ -291,26 +280,25 @@ body {
   max-width: 275px;
 }
 
-/*----------- MAIN ---------------*/
+/*-----------PORTFOLIO ---------------*/
 
-.main {
+.portfolio {
   padding-top: 96px;
-  padding-bottom: 120px;
 }
 
-.main-btn {
+.portfolio-btn {
   color: #4d5ae5;
   background: #f4f4fd;
   padding: 12px 24px;
   border: 1px solid #e7e9fc;
 }
 
-.main-btn:hover,
-.main-btn:focus {
+.portfolio-btn:hover,
+.portfolio-btn:focus {
   color: var(--title-color);
   background-color: var(--main-color);
 }
-.main-list {
+.portfolio-list {
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -319,6 +307,7 @@ body {
 .second-list {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
   column-gap: 24px;
   row-gap: 48px;
 }
@@ -327,8 +316,8 @@ body {
   flex-basis: calc((100% - 48px) / 3);
 }
 
-.main-content {
-  padding: 32px 16px;
+.portfolio-content {
+  padding: 32px 0px;
   border: 1px solid #e7e9fc;
   border-top: none;
   background: var(--title-color);
