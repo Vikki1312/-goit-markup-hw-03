@@ -197,6 +197,12 @@ body {
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/bg.jpg);
+  background-size: cover;
 }
 .hero-title {
   font-size: 56px;
@@ -278,6 +284,32 @@ body {
   text-align: center;
 }
 
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--main-color);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.social-list-icon {
+  fill: #f4f4fd;
+}
+
 /*--------- FOOTER-------- */
 .footer {
   background-color: #2e2f42;
@@ -315,6 +347,9 @@ body {
 .portfolio-btn:focus {
   color: var(--title-color);
   background-color: var(--main-color);
+  border: 1px solid #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-list {
   display: flex;
@@ -329,6 +364,13 @@ body {
   row-gap: 48px;
 }
 
+.second-link:hover .portfolio-content,
+.second-link:focus .portfolio-content {
+  border: 0.5px solid #f4f4fd;
+  border-top: none;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .second-item {
   flex-basis: calc((100% - 48px) / 3);
 }
@@ -338,4 +380,5 @@ body {
   border: 1px solid #e7e9fc;
   border-top: none;
   background: var(--title-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
